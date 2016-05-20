@@ -1,4 +1,3 @@
-<div *ngFor="#add of adds">
-  <div>{{add.caption}}</div>
-  <div>{{add.text}}</div>
+<div *ngFor="let add of adds">
+  <app-add [data]="add"></app-add>
 </div>
