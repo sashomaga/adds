@@ -1,2 +1,2 @@
 export {environment} from './environment';
-export {AddsAppAppComponent} from './adds-app.component';
+export {AdsAppComponent} from './ads-app.component';

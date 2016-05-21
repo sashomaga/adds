@@ -1,23 +1,23 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
-export interface IAdd {
+export interface IAd {
     caption: string;
     text: string;
 }
 
 @Component({
   moduleId: module.id,
-  selector: 'app-add',
-  templateUrl: 'add.component.html',
-  styleUrls: ['add.component.css']
+  selector: 'app-ad',
+  templateUrl: 'ad.component.html',
+  styleUrls: ['ad.component.css']
 })
-export class AddComponent implements IAdd, OnInit {
+export class AdComponent implements IAd, OnInit {
     caption: string;
     text: string;
 
-    @Input() data: IAdd;
-    @Output() clicked: EventEmitter<IAdd> =
-        new EventEmitter<IAdd>();
+    @Input() data: IAd;
+    @Output() clicked: EventEmitter<IAd> =
+        new EventEmitter<IAd>();
 
     constructor() {
     }

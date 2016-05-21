@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { IAdd, AddComponent } from './../add/add.component';
+import { IAd, AdComponent } from './../add/ad.component';
 
 @Component({
     moduleId: module.id,
     selector: 'app-list',
     templateUrl: 'list.component.html',
     styleUrls: ['list.component.css'],
-    directives: [AddComponent]
+    directives: [AdComponent]
 })
 export class ListComponent implements OnInit {
 
-    adds: IAdd[];
+    ads: IAd[];
     constructor() {
-        this.adds = [
+        this.ads = [
             {
               caption: 'Caption1',
               text: 'Text1'
@@ -26,7 +26,7 @@ export class ListComponent implements OnInit {
               text: 'Text3',
             },
         ];
-        console.log("constructing list", this.adds);
+        console.log("constructing list", this.ads);
     }
 
   ngOnInit() {

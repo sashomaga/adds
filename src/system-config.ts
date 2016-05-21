@@ -33,7 +33,7 @@ const barrels: string[] = [
   'app/core/list',
   'app/core/header',
   'app/core/footer',
-  'app/core/add',
+  'app/core/ad',
   /** @cli-barrel */
 ];
 
