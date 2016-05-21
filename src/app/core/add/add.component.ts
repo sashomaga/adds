@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 export interface IAdd {
     caption: string;
@@ -12,13 +12,22 @@ export interface IAdd {
   styleUrls: ['add.component.css']
 })
 export class AddComponent implements IAdd, OnInit {
-    @Input() caption: string;
-    @Input() text: string;
+    caption: string;
+    text: string;
 
-    constructor() {}
+    @Input() data: IAdd;
+    @Output() clicked: EventEmitter<IAdd> =
+        new EventEmitter<IAdd>();
 
-    ngOnInit() {
-        console.log('init', this.caption);
+    constructor() {
     }
 
+    ngOnInit() {
+        this.caption = this.data.caption;
+        this.text = this.data.text;
+    }
+
+    onClick() : void {
+        this.clicked.emit(this.data);
+    }
 }
