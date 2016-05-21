@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 export interface IAdd {
     caption: string;
@@ -12,15 +12,13 @@ export interface IAdd {
   styleUrls: ['add.component.css']
 })
 export class AddComponent implements IAdd, OnInit {
+    @Input() caption: string;
+    @Input() text: string;
 
-    caption: string;
-    text: string;
-    constructor(private data: IAdd) {
-      this.caption = data.caption;
-      this.text = data.text;
-    }
+    constructor() {}
 
     ngOnInit() {
+        console.log('init', this.caption);
     }
 
 }

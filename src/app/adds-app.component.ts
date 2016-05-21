@@ -3,11 +3,11 @@ import { ListComponent } from './core/list/list.component';
 
 @Component({
     moduleId: module.id,
-    selector: 'adds-app-app',
+    selector: 'adds-app',
     templateUrl: 'adds-app.component.html',
     styleUrls: ['adds-app.component.css'],
     directives: [ListComponent]
 })
 export class AddsAppAppComponent {
-  title = 'adds-app works!';
+  title = 'adds-app!';
 }

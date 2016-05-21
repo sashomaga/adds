@@ -1,3 +1,3 @@
-<div *ngFor="let add of adds">
-  <app-add [data]="add"></app-add>
-</div>
+<ul class="list-group">
+    <app-add *ngFor="let add of adds" [caption]='add.caption' [text]='add.text'></app-add>
+</ul>
