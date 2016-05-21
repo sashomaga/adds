@@ -14,7 +14,7 @@ export class ListComponent implements OnInit {
     constructor() {
         this.ads = [
             {
-              caption: 'Caption1',
+              caption: 'Caption',
               text: 'Text1'
             },
             {
