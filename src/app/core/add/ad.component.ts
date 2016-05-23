@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 export interface IAd {
     caption: string;
@@ -9,7 +10,8 @@ export interface IAd {
   moduleId: module.id,
   selector: 'app-ad',
   templateUrl: 'ad.component.html',
-  styleUrls: ['ad.component.css']
+  styleUrls: ['ad.component.css'],
+  directives: [ROUTER_DIRECTIVES]
 })
 export class AdComponent implements IAd, OnInit {
     caption: string;

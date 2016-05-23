@@ -34,6 +34,8 @@ const barrels: string[] = [
   'app/core/header',
   'app/core/footer',
   'app/core/ad',
+  'app/core/new-ad',
+  'app/core/ad-detail',
   /** @cli-barrel */
 ];
 
