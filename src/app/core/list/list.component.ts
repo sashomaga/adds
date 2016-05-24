@@ -14,16 +14,19 @@ export class ListComponent implements OnInit {
     constructor() {
         this.ads = [
             {
-              caption: 'Caption',
-              text: 'Text1'
+                id: 1,
+                caption: 'Caption',
+                text: 'Text1'
             },
             {
-              caption: 'Caption2',
-              text: 'Text2'
+                id: 2,
+                caption: 'Caption2',
+                text: 'Text2'
             },
             {
-              caption: 'Caption3',
-              text: 'Text3',
+                id: 3,
+                caption: 'Caption3',
+                text: 'Text3',
             },
         ];
         console.log("constructing list", this.ads);
